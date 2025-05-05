@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Love Story</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #8f7a7d;
+            padding: 20px;
+            text-align: center;
+            color: rgb(20, 3, 3);
+        }
+        section {
+            padding: 20px;
+            margin: 10px;
+        }
+        h2 {
+            color: #090b13;
+        }
+        .gallery img {
+            width: 100%;
+            height: auto;
+            margin-bottom: 10px;
+        }
+        footer {
+            background-color: #ffb6c1;
+            text-align: center;
+            padding: 10px;
+            color: #fff;
+        }
+        .countdown {
+            font-size: 24px;
+            color: #ff69b4;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Our Love Story</h1>
+</header>
+
+<section id="about-us">
+    <h2>My Dearest PéTRONéLA,
+
+        I don’t know how to begin a letter that comes straight from the deepest part of my heart, but I’ll try—with honesty, with feeling, and with all the care I have for you.
+        
+        Meeting you on HelloTalk was the most beautiful accident of my life. I never expected that a simple app would bring someone like you into my world. It was random, unexpected—but from the very first message, something changed in me. And that change only grew deeper, stronger, and more meaningful with every word we shared.
+        
+        You’ve become more than just someone I talk to online. You've become a part of me. I care about you so deeply—deeper than I ever imagined possible with someone so far away. When you're happy, it fills me with joy; when you're hurting, I feel it too. It’s like our hearts found a way to connect across all this distance.
+        
+        And oh, how I hate that distance.
+        
+        If it weren’t for it, I’d be there right now—just to see your smile in person, to hold your hand when you need support, to remind you every day just how special you are. I know I could make you even happier if I were closer. But until then, I promise: I’ll be there for you, no matter what. Always. You are never alone.
+        
+        Since you came into my life, I feel different—lighter, fuller, more alive. Even my family noticed. They ask me why I’m smiling more, laughing more, just… better. And the truth is simple: it’s you. You became the sun that lights up my mornings and the moon that brings peace to my nights. You are my first thought when I wake up, and the one I carry with me through every moment—whether I’m celebrating or struggling.
+        
+        You’ve become my happiness, my peace, my muse, and someone I cherish more than I can fully put into words. But I hope this letter gives you a small glimpse into how much you mean to me.
+        
+        Even if we’re miles apart, my heart is always close to yours.
+        
+        Forever yours,
+        YASIN</h2>
+    <p>From the first moment we met, something clicked between us. I will never forget that feeling. Here, you can write about how you met, your special memories, and how much she means to you.</p>
+</section>
+
+<section id="memories" class="gallery">
+    <h2>Our Memories</h2>
+    <p>Here are some of our favorite photos and moments we’ve shared together.</p>
+    <!-- Replace with your own images -->
+    <h3>THIS IS WHEN I MISS U </h3>
+    <img src="memory1.jpg.jpeg" alt="Memory 1">
+    <h3>THIS IS THE photo THAT MY GRANDMA SOW WHEN SHE SAID THAT UR SO beautiful AND THAT I DON'T DESERVE U</h3>
+        <img src="memory5.jpg.jpeg" alt="Memory 2">
+    <h3>THIS IS WHEN MY HEART FELT BROCKEN WHEN U TOLD ME THAT UE EXAM WAS NOT GREAT</h3>
+    <video controls width="100%">
+        <source src="memory2.jpg.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+        <h3>THIS IS THE photo THAT MY GRANDMA SOW WHEN SHE SAID THAT UR SO beautiful AND THAT I DON'T DESERVE U</h3>
+        <img src="memory5.jpg.jpeg" alt="Memory 2">
+    </video>
+</section>
+
+<section id="love-letters">
+    <h2>Love Letters</h2>
+    <p>These are my heartfelt words to you:
+        I don’t know what the future holds or where life will take us, but there is one thing I need you to always remember: I’m here for you. Always.
+
+        No matter how far apart we are, no matter how tough things get—don’t be afraid. I’m not going anywhere. I’ll stand by you through every joy and every storm. If you ever feel alone, I’ll be the voice that reminds you that you are loved. If the world feels heavy, I’ll be your strength. And if fear ever tries to creep in, I’ll be the calm that stays with you through the night.
+        
+        I know we’re separated by distance, but my heart is always right there with you. I promise, you never have to face anything on your own. You don’t have to be afraid of tomorrow, of pain, of change—because I’ll face it all with you.
+        
+        You are not alone. You never will be.
+        
+        Even if I can't hold your hand right now, I hope you feel me in every word, in every thought, and in every moment we share. I’ll always be someone you can lean on, someone who believes in you, someone who loves you with everything I’ve got.
+        
+        So when your heart feels uncertain, remember this: I’m yours. And I’m staying.
+        
+        Always and forever,and i will annoy u with my stupidity sometimes me and my weirdo cat hihihihi :)
+    </p>
+    <p>"My dearest, you are my light, my love, and my best friend. Every day I am grateful for the moments we share, and I can’t wait to build even more memories with you."</p>
+    <p>Feel free to add more letters or notes here that you have written for her.</p>
+</section>
+
+<section id="countdown">
+    <h2>Countdown to Our Next Meeting</h2>
+    <div id="countdown-timer" class="countdown"></div>
+    <script>
+        var nextMeetingDate = new Date("2025-06-01T00:00:00");  // Replace with your next meeting date
+        var countdownElement = document.getElementById("countdown-timer");
+
+        function updateCountdown() {
+            var now = new Date();
+            var timeRemaining = nextMeetingDate - now;
+
+            if (timeRemaining <= 0) {
+                countdownElement.innerHTML = "We are together now!";
+                return;
+            }
+
+            var days = Math.floor(timeRemaining / (1000 * 60 * 60 * 24));
+            var hours = Math.floor((timeRemaining % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minutes = Math.floor((timeRemaining % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((timeRemaining % (1000 * 60)) / 1000);
+
+            countdownElement.innerHTML = days + "d " + hours + "h " + minutes + "m " + seconds + "s";
+        }
+
+        setInterval(updateCountdown, 1000);
+    </script>
+</section>
+
+<footer>
+    <p>Forever yours, [Your Name]</p>
+</footer>
+
+</body>
+</html>
